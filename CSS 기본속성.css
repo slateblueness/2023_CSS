@@ -1,0 +1,60 @@
+h1{color: rgba(0, 0, 0, 0.5);}
+body
+{
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5)),
+    url(./img/cat-g5649882d2_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-deco{
+    text-decoration: underline dashed 3px navy;
+}
+
+a{
+    text-decoration: none;
+    text-decoration-line: overline;
+    text-decoration-color: blue;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 1px;
+}
+
+.text-shadow{
+    text-shadow: 1px 1px 3px red;
+}
+
+.font-mono{
+    font-family: Vivaldi, "CookieRun Black";
+}
+
+.font-weight{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+/* 띄어쓰기 사용: link 클래스 안에 있는 a태그에 접근 */
+.link a:link{color:olive}
+.link a:visited{color: brown;}
+.link a:hover{color: coral;}
+.link a:active{color: red;}
+
+/* 클래서 이름 바로 뒤에 상태를 붙여서 사용할 수 있다 */
+.p-hover:hover{color: blueviolet;}
+
+.list-mark{
+    list-style-image: url(./img/tinypencil.png);
+}
+
+/* 두 개 이상의 태그나 클래스에 동일한 CSS를 넣고 싶을 때
+    ,를 통해서 함께 넣어 줄 수 있다 */
+.table-col, .table-col td{border: solid 1px black;}
+.table-col{border-collapse: collapse;}
+
+.table-cell, .table-cell td{border: 1px solid blue;}
+.table-cell{empty-cells: show;}
