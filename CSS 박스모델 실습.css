@@ -1,0 +1,31 @@
+.text-center{
+    text-align: center;
+}
+
+.box-style{
+    background-color: rgb(255, 145, 0);
+    padding: 50px;
+}
+
+.box-style2{
+    border-style: dashed;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.box-style2 p{
+    background-color: beige;
+    padding: 10px;
+}
+
+.button{
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 255, 0.226);
+    border-radius: 20px;
+}
+.button:hover{
+    background-color: rgba(162, 0, 255, 0.479);
+}
