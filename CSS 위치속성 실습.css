@@ -1,0 +1,54 @@
+.box{
+    border: 3px solid black;
+    background-color: burlywood;
+    padding: 0 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 170px;
+}
+
+.up, .down{text-align: center;}
+.up a{
+    text-decoration: none;
+    color: black;
+}
+.down a{
+    text-decoration: none;
+    color: black;
+}
+
+.up a:hover{color: white;}
+.down a:hover{color: white;}
+
+ul.list{
+    overflow: auto;
+    padding: 20px;
+    list-style: none;
+    text-decoration: none;
+    background-color: azure;
+    width: 400px;
+}
+
+ul.list li{
+    float: left;
+    background-color: skyblue;
+    padding: 5px 10px;
+}
+
+.li1{
+    float: left;
+    padding: 20px;
+}
+.li2{
+    float: left;
+    padding: 20px;
+}
+.li3{
+    float: left;
+    padding: 20px;
+}
+.li4{
+    float: left;
+    padding: 20px;
+}

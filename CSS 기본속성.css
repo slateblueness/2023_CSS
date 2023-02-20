@@ -44,7 +44,7 @@ a{
 .link a:hover{color: coral;}
 .link a:active{color: red;}
 
-/* 클래서 이름 바로 뒤에 상태를 붙여서 사용할 수 있다 */
+/* 클래스 이름 바로 뒤에 상태를 붙여서 사용할 수 있다 */
 .p-hover:hover{color: blueviolet;}
 
 .list-mark{

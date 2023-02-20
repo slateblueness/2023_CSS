@@ -1,0 +1,67 @@
+.outbox p{
+    background-color: yellow;
+}
+.outbox>p{
+    background-color: skyblue;
+}
+.sibling~p{
+    background-color: cadetblue;
+}
+/* +를 사용할 때는 바로 뒤에 있는 태그만 찾을 수 있다 */
+.sibling+a{
+    background-color: azure;
+}
+.sibling+p{
+    background-color: azure;
+}
+
+.sibling~.test{
+    background-color: burlywood;
+}
+
+.input-focus:focus{
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.input-focus:focus+p{
+    color: blue;
+}
+.state>input:checked+span{
+    color: gray;
+}
+.state>input:disabled+span{
+    text-decoration: line-through 1px solid;
+}
+
+.menu-list>li:first-child{
+    background-color: cadetblue;
+}
+.menu-list>li:last-child{
+    background-color: cornflowerblue;
+}
+.menu-list>li:nth-child(2n){
+    background-color: pink
+}
+.menu-list>li:nth-child(3n){
+    background-color: lightblue;
+}
+
+.table-color{border-collapse: collapse;}
+
+.table-color tr:nth-child(2n){
+    background-color: yellow;
+}
+
+.child-tag>p:first-child{
+    color: cornflowerblue;
+}
+.child-tag>h1{
+    color: brown;
+}
+
+/* 클래스를 지정하고 자손으로 타입 찾기 */
+/* first-child와 동일한 역할 */
+.of-type>p:first-of-type{
+    background-color: bisque;
+}
