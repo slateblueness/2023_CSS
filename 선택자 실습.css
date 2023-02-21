@@ -1,12 +1,32 @@
-.box-in li a{
+.box-in li>a{
     text-decoration: none;
-    color: blue;
-}
-
-.box-in li{
-    list-style: none;
+    color: black;
 }
 
 .box-in{
     border: 2px solid blueviolet;
+}
+
+/* li 태그가 block 속성일 때는 float 속성으로 정렬 */
+.tag li{
+    float: right;
+    margin: 0 5px;
+    padding: 7px 13px;
+    background-color: blue;
+    color: white;
+    border-radius: 25px;
+}
+
+ul{list-style: none;}
+
+.tag-inline{clear: both;}
+
+.tag-inline>span{
+    position: relative;
+    left: 86%;
+    margin: 0 5px;
+    padding: 7px 13px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 25px;
 }

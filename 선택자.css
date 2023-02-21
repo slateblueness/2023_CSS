@@ -65,3 +65,57 @@
 .of-type>p:first-of-type{
     background-color: bisque;
 }
+
+.first-letter:hover::first-letter{
+    color: blueviolet;
+    font-size: 1.5rem;
+}
+
+.first-line::first-line{
+    color: cornflowerblue;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.before::before{
+    /* content 명령어를 넣어서 내용 추가 */
+    /* 글자 추가 or url을 통해 이미지 추가도 가능 */
+}
+
+.before::before{
+    content: url(./img/bird-gc7f8e4d6d_1920.jpg);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+.before-color::before{
+    content: "";
+    background-color: rgb(50, 92, 170);
+    /* content에 글자가 없을 때, inline-block을 사용하여 공간을
+    임의로 생성하여 색상을 표시할 수 있다 */
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.after::after{
+    /* content 속성을 사용 */
+    content: "추가";
+    color: blue;
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.after-color:hover:after{
+    content: "";
+    width: 110px;
+    height: 30px;
+    background-color: rgba(0, 255, 0, 0.5);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
