@@ -30,3 +30,12 @@ ul{list-style: none;}
     color: white;
     border-radius: 25px;
 }
+
+.badge>p::after{
+    content: "N";
+    background-color: orange;
+    border-radius: 80%;
+    padding: 0 3px;
+    color: white;
+    display: inline-block;
+}

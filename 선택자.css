@@ -80,14 +80,19 @@
 .before::before{
     /* content 명령어를 넣어서 내용 추가 */
     /* 글자 추가 or url을 통해 이미지 추가도 가능 */
+    content: "추가";
+    color: blue;
 }
 
-.before::before{
-    content: url(./img/bird-gc7f8e4d6d_1920.jpg);
-    display: inline-block;
+.before-image::before{
+    /* content로 jpg이미지 파일을 가지고 왔을 때 크기 수정에 어려움 발생 */
+    /* 크기 수정이 가능한 background-image로 추가 */
+    content: "";
+    background-image: url(./img/bird-gc7f8e4d6d_1920.jpg);
+    background-size: cover;
     width: 50px;
     height: 50px;
-    background-size: cover;
+    display: inline-block;
 }
 
 .before-color::before{
@@ -118,4 +123,21 @@
     display: inline-block;
     position: absolute;
     left: 0;
+}
+
+.attr>input[type="checkbox"]:checked+span{
+    color: cadetblue;
+}
+
+.attr>input[type="radio"]:checked+span{
+    text-decoration: underline wavy blueviolet;
+}
+
+.attr>input[type="button"]:hover{
+    background-color: black;
+    color: white;
+}
+
+.attr>input[type="radio"][value="group"]{
+    /* 두 개 이상의 속성 이름과 속성값을 가진 태그를 찾을 수 있다 */
 }

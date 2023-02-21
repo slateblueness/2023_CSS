@@ -127,9 +127,50 @@
     <h2>html 요소 앞과 뒤에 새로운 요소를 추가하는 선택자</h2>
 
     <p class="before">p태그 앞에 내용이 들어갑니다</p>
+    <p class="before-image">
+        p태그 앞에 이미지가 들어갑니다 <br>
+        svg: 벡터 이미지(크기 제한 없음) <br>
+        png/jpg/gif: 픽셀 이미지(크기 제한 있음)
+    </p>
     <p class="before-color">p태그 앞에 색상이 들어갑니다</p>
 
     <p class="after">p태그 뒤에 내용이 들어갑니다</p>
     <p class="after-color">p태그에 색상</p>
+
+    <h2>속성 선택자</h2>
+    <div class="attr">
+        <input type="checkbox"> <span>선택</span>
+        <input type="radio" name="group"> <span>네</span>
+        <input type="radio" name="group"> <span>아니오</span>
+        <input type="button" value="제출">
+    </div>
+    <hr>
+
+    <h1>선택자를 이용한 태그 작성</h1>
+    <p>
+        html에서 태그 이름을 적으면 관련 태그가 자동완성되는 것을 emmet이라고 한다 <br>
+        emmet으로 작성하는 태그는 선택자 형식으로 작성하면 자동완성된다
+    </p>
+    <p class="class-name">
+        p.class-name이라고 작성하면 클래스가 추가된다
+    </p>
+    <div>
+        <p>div>p를 작성하면 div 안에 p태그를 자식으로 바로 생성</p>
+    </div>
+    <div class="list">
+        <ul>
+            <li>내용 작성</li>
+            <li>내용 작성</li>
+            <li>내용 작성</li>
+        </ul>
+        <!-- alt를 누른 채로 여러 군데 커서를 클릭하면
+        한 번에 내용을 작성하거나 지울 수 있다 -->
+    </div>
+    <div>
+        <p></p>
+        <p></p>
+        <h3>div>p*2+h3</h3>
+    </div>
+    
 </body>
 </html>
