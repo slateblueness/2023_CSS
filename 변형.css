@@ -1,0 +1,298 @@
+.my-box{
+    width: 150px;
+    height: 150px;
+    background-color: lavender;
+}
+
+.trans{
+    transform: translate(10px, 10px);
+}
+
+.rotate{
+    transform: rotate(160deg);
+}
+
+.transform{
+    transform: translate(100px, 0) scale(0.8) skewX(20deg) skewY(20deg);
+}
+
+.transform-3d{
+    transform: rotateX(50deg) rotateY(30deg) translate3d(0, 0, 10px);
+}
+
+/* 전환될 방법을 알려 줘야 한다 (시작점 지정, ↓ 아래의 경우에는 :hover 사용 */
+.transition:hover{
+    background-color: blueviolet;
+    transition: background-color 1s;
+}
+
+.transform-transition:hover{
+    transform: translate(100px, 0) rotate(90deg);
+    width: 200px;
+    transition: all 1s;
+    transition-delay: 0.5s;
+}
+
+.transform-transition{
+    transition: transform 1s, width 1s;
+}
+
+.liner-transition:hover{
+    transform: rotate(90deg);
+    transition: all 1s;
+    transition-timing-function: linear;
+}
+
+input[type="checkbox"]:checked+span{
+    color: blue;
+    transition: color 1s;
+}
+
+input[type="checkbox"]+span{
+    transition: color 1s;
+}
+
+.after-transition>p::after{
+    content: "다른 글자로 전환 완료";
+    color: white;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.after-transition>p:hover:after{
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.line{
+    position: absolute;
+    box-sizing: content-box;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    z-index: 10;
+    opacity: 0;
+}
+
+.line:hover{
+    opacity: 1;
+    transition: all 1s;
+}
+
+.content-container{
+    width: 300px;
+    height: 300px;
+    background-color: azure;
+    overflow: hidden;
+}
+
+.content-container>.img{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./img/billiard-ball-g8f5bf66d3_1920.jpg);
+    transition: all 2s;
+}
+
+.content-container2{
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    background-color: azure;
+    overflow: hidden;
+
+}
+
+.content-container2>.img{
+    background-image: url(./img/number\ 2\ ball.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    background-position: center;
+    transition: all 2s;
+}
+
+.content-container2>.img:hover{
+    transform: scale(1.2);
+    transition: all 2s;
+}
+
+.content-container>.img2{
+    background-image: url(./img/bird-gc7f8e4d6d_1920.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+}
+
+.content-container>.black{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    box-sizing: border-box;
+    padding-top: 145px;
+}
+
+.content-container:hover>.black{
+    opacity: 0.5;
+    transition: all 1s;
+}
+
+.animation{
+    animation-name: movingback;
+    animation-duration: 1s;
+    animation-iteration-count: ;
+}
+
+@keyframes moving{
+    from{transform: translate(0, 0);}
+    to{transform: translate(100px, 0);}
+}
+0
+@keyframes movingback{
+    0%{transform: translate(0, 0);}
+    50%{transform: translate(200px, 0);}
+    100%{transform: translate(0, 0);}
+}
+
+.wrap{
+    overflow: hidden;
+}
+
+.animation-box{
+    border-radius: 0;
+    animation: movingbox 3s infinite;
+}
+
+@keyframes movingbox{
+    0%{}
+
+    20%{
+        transform: rotate(90deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    40%{
+        transform: rotate(180deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    60%{
+        transform: rotate(270deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 0;
+        background-color: mediumpurple;
+    }
+    
+    80%{
+        transform: rotate(360deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        background-color: magenta;
+    }
+    
+    100%{
+        transform: rotate(360deg);
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        border-top-right-radius: 0%;
+    }
+}
+
+.text{
+    color: white;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    padding-top: 50px;
+}
+
+.filter{
+    height: 300px;
+}
+
+.filter:hover{
+    filter: blur(5px) brightness(0.5);
+    transition: all 1s;
+}
+
+.image-list>.content-image{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+
+.image-list>.content-image:nth-child(1){
+    background-image: url(./img/cat-g5649882d2_1920.jpg);
+}
+
+.image-list>.content-image:nth-child(1):hover{
+    filter: invert();
+}
+
+.image-list>.content-image:nth-child(2){
+    background-image: url(./img/cherry-blossoms-g7a9dc1d52_640.jpg);
+}
+
+.image-list>.content-image:nth-child(2):hover{
+    filter: contrast(200%);
+}
+
+.image-list>.content-image:nth-child(3){
+    background-image: url(./img/jellyfish-gdfca8d4e4_640.jpg);
+}
+
+.image-list>.content-image:nth-child(3):hover{
+    filter: sepia(100%);
+}
+
+.pencil{
+    background-image: url(./img/pencil-solid.svg);
+    width: 150px;
+    height: 150px;
+    animation: moving-pencil 1s infinite;
+}
+
+@keyframes moving-pencil{
+    0%, 50%{
+        transform: rotate(0deg);
+    }
+    5%, 15%, 25%, 35%, 45% {
+        transform: rotate(13deg);
+    }
+    10%, 20%, 30%, 40% {
+        transform: rotate(-13deg);
+    }
+}
+
+.mix-blend{
+    color: white;
+    position: fixed;
+    top: 0;
+    mix-blend-mode: difference;
+}
+
+body{background-color: white;}

@@ -1,0 +1,15 @@
+.col{
+    column-count: 3;
+    background-color: mistyrose;
+    column-rule: solid skyblue 2px;
+    column-gap: 50px;
+    padding: 10px;
+    column-fill: balance;
+}
+
+.span-all{
+    column-span: all;
+    background-color: plum;
+    color: white;
+    text-align: center;
+}
