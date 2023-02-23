@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./gird 레이아웃.css">
+</head>
+<body>
+    <h1>gird 레이아웃</h1>
+    <ul>
+        <li>flex 레이아웃은 주로 한 줄로 정리됨</li>
+        <li>gird 레이아웃은 주로 표처럼 정리됨</li>
+    </ul>
+    <div class="grid-box">
+        <p>아이템1</p>
+        <p>아이템2</p>
+        <p>아이템3</p>
+        <p>아이템4</p>
+    </div>
+
+    <h2>row를 기준으로 나누는 grid</h2>
+    <div class="grid-box-row">
+        <p>아이템1</p>
+        <p>아이템2</p>
+        <p>아이템3</p>
+        <p>아이템4</p>
+        <p>아이템5</p>
+    </div>
+    <p>
+        gird-tamplate에서 사용하는 fr 단위는 배율 단위 <br>
+        아이템의 크기에 맞춰서 작성된 배율(fr)로 나눠진다
+    </p>
+
+    <h2>grid 안의 grid 크기 합치기</h2>
+    <div class="grid-box-item">
+        <p>아이템1</p>
+        <p>아이템2</p>
+        <p>아이템3</p>
+        <p>아이템4</p>
+        <p>아이템5</p>
+    </div>
+    <p>
+        grid를 합치거나 이동시키기 위해서 grid-column과 grid-row를 사용한다 <br>
+        기본적으로 row의 크기는 auto로 아이템의 크기에 맞춰져 있고,
+        auto의 크기를 변경할 수도 있다
+    </p>
+
+    <h2>grid 실습</h2>
+    <div class="grid-box-contain">
+        <div class="content">
+            <div class="item-image"></div>
+            <h4>당구공</h4>
+            <p>당구공 이미지 당구공 이미지 당구공 이미지 당구공 이미지</p>
+        </div>
+        <div class="content">
+            <div class="item-image"></div>
+            <h4>당구공</h4>
+            <p>당구공 이미지</p>
+        </div>
+        <div class="content">
+            <div class="item-image"></div>
+            <h4>당구공</h4>
+            <p>당구공 이미지</p>
+        </div>
+        <div class="content">
+            <div class="item-image"></div>
+            <h4>당구공</h4>
+            <p>당구공 이미지</p>
+        </div>
+        <div class="content">
+            <div class="item-image"></div>
+            <h4>당구공</h4>
+            <p>당구공 이미지</p>
+        </div>
+        <div class="content">
+            <div class="item-image"></div>
+            <h4>당구공</h4>
+            <p>당구공 이미지</p>
+        </div>
+    </div>
+</body>
+</html>

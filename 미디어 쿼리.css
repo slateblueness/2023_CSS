@@ -1,0 +1,40 @@
+/* 보통 pc 기준으로 사용 */
+body{
+    background-color: rgba(53, 50, 204, 0.13);
+}
+
+.grid-box-media{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-box-media>.content{
+    /* 콘텐츠 값이 없으므로 높이값만 지정한다 */
+    height: 300px;
+    margin: 10px;
+    background-color: gainsboro;
+}
+
+/* 미디어 쿼리를 사용할 때는 pc보다 작은 디자인을 적용 */
+/* min-width가 480px: width가 480px보다 커졌을 때 적용된다는 의미 */
+/* max-width가 480px: width가 480px보다 작아졌을 때 적용된다는 의미 */
+@media screen and (max-width:480px){
+    body{
+        background-color: rgba(30, 143, 255, 0.425);
+    }
+
+    .grid-box-media{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 사이값 크기를 작성해 줄 때는 min, max를 둘 다 사용하며 둘을 and로 연결하여 표현 */
+@media screen and (min-width:481px) and (max-width:768px){
+    body{
+        background-color: lightgoldenrodyellow;
+    }
+
+    .grid-box-media{
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -25,10 +25,58 @@
 
 .flex-box-height-wrap{
     display: flex;
-    min-height: 150px;
     height: 150px;
     background-color: lavender;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
+}
+
+.flex-box-item{
+    display: flex;
+    height: 150px;
+    background-color: lightsteelblue;
+    justify-content: space-between;
+}
+
+.flex-box-item>p:nth-child(1){
+    align-self: center;
+}
+
+.flex-box-item>p:nth-child(2){
+    align-self: flex-end;
+}
+
+.flex-box-bar{
+    display: flex;
+    justify-content: space-around;
+    /* 각각 요소들의 크기가 다르므로 움직일 수 있는 높이가 있음
+    → 이 상태에서 align-items을 쓰면 움직일 수 있는 요소는 정렬 가능 */
+    height: 100px;
+    background-color: rgb(133, 151, 201);
+    align-items: center;
+}
+
+.flex-box-bar>.logo{
+    background-image: url(./img/pencil-solid.svg);
+    height: 30px;
+    /* ↓ 이미지 최소 넓이 고정 */
+    min-width: 30px;
+}
+
+.flex-box-bar>.flex-box-menu{
+    /*  */
+    width: 60%;
+}
+
+.flex-box-bar>.flex-box-menu>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.flex-box-bar>.flex-box-menu>ul>li>a{
+    text-decoration: none;
+    color: white;
 }
