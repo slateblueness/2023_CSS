@@ -1,0 +1,40 @@
+body, ul{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav>.gnb{
+    display: flex;
+    justify-content: space-around;
+    background-color: lavender;
+}
+
+.nav>.gnb .gnb-sub{
+    position: absolute;
+    margin-left: -25px;
+    background-color: peachpuff;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nav>.gnb>li:hover>.gnb-sub{
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s;
+}
+
+/* 하위메뉴에 마우스를 올렸을 때 전환 효과 적용 */
+.nav>.gnb>li>.gnb-sub>li:hover{
+    border-bottom: solid 2px blue;
+    transition: all 0.3s;
+}

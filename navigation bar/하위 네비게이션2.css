@@ -1,0 +1,48 @@
+body, ul{padding: 0; margin: 0;}
+
+ul{list-style: none;}
+
+a{text-decoration: none;}
+
+/* .nav>.gnb 값부터 정리 */
+.nav>.gnb{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 182, 193, 0.514);
+    padding: 10px 0;
+}
+
+/* .gnb에 마우스를 올렸을 때 하위메뉴가 보이도록 작성 */
+.nav>.gnb:hover .gnb-sub{
+    visibility: visible;
+    z-index: 1;
+}
+
+.nav:hover+.background{
+    background-color: azure;
+    height: 80px;
+}
+
+.nav>.gnb>li:hover>a{
+    font-weight: bold;
+    color: black;
+}
+
+/* .nav>.gnb의 .gnd-sub */
+.nav>.gnb .gnb-sub{
+    position: absolute;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.nav>.gnb .gnb-sub>li{
+    margin: 4px 0;
+}
+
+.background{
+    display: inline-block;
+    position: absolute;
+    background-color: rgba(21, 21, 49, 0.123);
+    height: 0px;
+    width: 100%;
+}

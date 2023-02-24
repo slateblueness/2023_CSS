@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.layout-float{
+    background-color: rgb(148, 180, 148);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    width: 800px;
+    margin: auto;
+}
+
+.layout-float>.side{
+    float: left;
+    width: 200px;
+    height: 600px;
+    line-height: 600px;
+    background-color: cadetblue;
+}
+
+.layout-float>.main>.header{
+    height: 200px;
+    line-height: 200px;
+    background-color: cornflowerblue;
+}
+
+.layout-float>.main>.contents{
+    height: 200px;
+    line-height: 200px;
+    background-color: indigo;
+}
+
+.layout-float>.main>.footer{
+    height: 200px;
+    line-height: 200px;
+    background-color: mediumturquoise;
+}
+
+/* float 두 번째 사용 방법 */
+.layout-float2{
+    background-color: rgb(195, 173, 255);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    width: 800px;
+    margin: auto;
+    overflow: auto;
+}
+
+.layout-float2>.side{
+    float: left;
+    width: 200px;
+    height: 600px;
+    line-height: 600px;
+    background-color: darkolivegreen;
+}
+
+.layout-float2>.main{
+    float: left;
+}
+
+.layout-float2>.main>.header{
+    width: 600px;
+    height: 200px;
+    line-height: 200px;
+    background-color: chocolate;
+}
+
+.layout-float2>.main>.contents{
+    width: 600px;
+    height: 200px;
+    line-height: 200px;
+    background-color: rgb(99, 30, 210);
+}
+
+.layout-float2>.main>.footer{
+    width: 600px;
+    height: 200px;
+    line-height: 200px;
+    background-color: rgb(210, 30, 186);
+}
+
+/* grid를 이용한 레이아웃 */
+.layout-grid{
+    background-color: rgb(157, 148, 180);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 200px 600px;
+    grid-template-rows: 200px 200px 200px;
+}
+
+.layout-grid>.side{
+    background-color: blueviolet;
+    grid-row: 1/4;
+    line-height: 600px;
+}
+
+.layout-grid>.header{
+    background-color: mediumvioletred;
+    grid-row: 1/2;
+    line-height: 200px;
+}
+
+.layout-grid>.contents{
+    background-color: rgb(58, 58, 150);
+    line-height: 200px;
+}
+
+.layout-grid>.footer{
+    background-color: rgb(82, 82, 82);
+    line-height: 200px;
+}
+

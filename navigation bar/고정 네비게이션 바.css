@@ -1,0 +1,30 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-color: lavender;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+.header>.nav>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.main>.content1{
+    /* vh(뷰포트 높이): 콘텐츠를 브라우저 높이 비율에 따라서 노출하고 싶을 때 사용하는 단위 */
+    height: 100vh;
+    padding-top: 150px;
+    background-color: rgba(173, 216, 230, 0.486);
+}
+
+.main>.content2{
+    height: 100vh;
+    background-color: darkgrey;
+}

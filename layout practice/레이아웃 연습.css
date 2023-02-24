@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+    text-align: center;
+    color: white;
+    background-color: gainsboro;
+    width: 800px;
+    margin: auto;
+}
+
+.header{
+    background-color: cornflowerblue;
+    height: 70px;
+    /* 텍스트 줄 간격 조정하여 글자 위치를 가운데로 옮길 수 있음 */
+    line-height: 70px;
+}
+
+.nav{
+    background-color: darkturquoise;
+    height: 70px;
+    /* 태그를 넣어서 정렬할 때: padding 사용
+       nav의 크기가 지정되어 있을 때 계산의 편의를 위해 */
+    padding: 10px 0;
+}
+
+/* main-float의 내용 */
+.main-float{
+    overflow: visible;
+}
+
+.main-float>.aside{
+    float: left;
+    box-sizing: border-box;
+    width: 250px;
+    height: 500px;
+    line-height: 500px;
+    background-color: rgb(145, 206, 121);
+}
+
+.main-float>.content{
+    box-sizing: border-box;
+    margin-left: 250px;
+    height: 500px;
+    line-height: 500px;
+    background-color: rgba(163, 76, 221, 0.233);
+}
+
+.main-float>.content>h2{
+    margin: 0;
+}
+
+/* main-grid의 내용 */
+.main-grid{
+    clear: both;
+    display: grid;
+    grid-template-columns: 250px 550px;
+    height: 500px;
+    line-height: 500px;
+}
+
+.main-grid h2{
+    margin: 0;
+}
+
+.main-grid>.aside{
+    background-color: lightpink;
+}
+
+.main-grid>.content{
+    background-color: rgb(119, 119, 167);
+}
+
+/* footer의 내용 */
+.footer{
+    height: 80px;
+    line-height: 80px;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+.footer>h2{
+    margin: 0;
+}
